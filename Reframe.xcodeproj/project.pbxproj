@@ -9,13 +9,20 @@
 /* Begin PBXBuildFile section */
 		E1FD669124615A030078239F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FD669024615A030078239F /* AppDelegate.swift */; };
 		E1FD669324615A030078239F /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FD669224615A030078239F /* Document.swift */; };
-		E1FD669624615A030078239F /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1FD669424615A030078239F /* Document.xib */; };
 		E1FD669824615A040078239F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1FD669724615A040078239F /* Assets.xcassets */; };
 		E1FD669B24615A040078239F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1FD669924615A040078239F /* MainMenu.xib */; };
+		E1FD66A524615B0F0078239F /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FD669224615A030078239F /* Document.swift */; };
+		E1FD66A624615B0F0078239F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FD669024615A030078239F /* AppDelegate.swift */; };
+		E1FD66A924615B0F0078239F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1FD669724615A040078239F /* Assets.xcassets */; };
+		E1FD66AA24615B0F0078239F /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1FD669424615A030078239F /* Document.xib */; };
+		E1FD66AB24615B0F0078239F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1FD669924615A040078239F /* MainMenu.xib */; };
+		E1FD66B5246160E80078239F /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1FD669424615A030078239F /* Document.xib */; };
+		E1FD66BA2461621F0078239F /* reframe.o in Resources */ = {isa = PBXBuildFile; fileRef = E1FD66B4246160990078239F /* reframe.o */; };
+		E1FD66BB2461653B0078239F /* reframe.o in Resources */ = {isa = PBXBuildFile; fileRef = E1FD66B4246160990078239F /* reframe.o */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E1FD668D24615A030078239F /* Reframe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reframe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1FD668D24615A030078239F /* Reframe slower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reframe slower.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1FD669024615A030078239F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1FD669224615A030078239F /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
 		E1FD669524615A030078239F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Document.xib; sourceTree = "<group>"; };
@@ -23,10 +30,20 @@
 		E1FD669A24615A040078239F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		E1FD669C24615A040078239F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1FD669D24615A040078239F /* Reframe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Reframe.entitlements; sourceTree = "<group>"; };
+		E1FD66AF24615B0F0078239F /* Reframe faster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reframe faster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1FD66B024615B0F0078239F /* Reframe slower copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Reframe slower copy-Info.plist"; path = "/Users/bernardi/Desktop/Reframe/Reframe slower copy-Info.plist"; sourceTree = "<absolute>"; };
+		E1FD66B4246160990078239F /* reframe.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = reframe.o; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E1FD668A24615A030078239F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1FD66A724615B0F0078239F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,13 +58,15 @@
 			children = (
 				E1FD668F24615A030078239F /* Reframe */,
 				E1FD668E24615A030078239F /* Products */,
+				E1FD66B024615B0F0078239F /* Reframe slower copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		E1FD668E24615A030078239F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E1FD668D24615A030078239F /* Reframe.app */,
+				E1FD668D24615A030078239F /* Reframe slower.app */,
+				E1FD66AF24615B0F0078239F /* Reframe faster.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,6 +74,7 @@
 		E1FD668F24615A030078239F /* Reframe */ = {
 			isa = PBXGroup;
 			children = (
+				E1FD66B4246160990078239F /* reframe.o */,
 				E1FD669024615A030078239F /* AppDelegate.swift */,
 				E1FD669224615A030078239F /* Document.swift */,
 				E1FD669424615A030078239F /* Document.xib */,
@@ -69,9 +89,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E1FD668C24615A030078239F /* Reframe */ = {
+		E1FD668C24615A030078239F /* Reframe slower */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E1FD66A024615A040078239F /* Build configuration list for PBXNativeTarget "Reframe" */;
+			buildConfigurationList = E1FD66A024615A040078239F /* Build configuration list for PBXNativeTarget "Reframe slower" */;
 			buildPhases = (
 				E1FD668924615A030078239F /* Sources */,
 				E1FD668A24615A030078239F /* Frameworks */,
@@ -81,9 +101,26 @@
 			);
 			dependencies = (
 			);
-			name = Reframe;
+			name = "Reframe slower";
 			productName = Reframe;
-			productReference = E1FD668D24615A030078239F /* Reframe.app */;
+			productReference = E1FD668D24615A030078239F /* Reframe slower.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1FD66A324615B0F0078239F /* Reframe faster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1FD66AC24615B0F0078239F /* Build configuration list for PBXNativeTarget "Reframe faster" */;
+			buildPhases = (
+				E1FD66A424615B0F0078239F /* Sources */,
+				E1FD66A724615B0F0078239F /* Frameworks */,
+				E1FD66A824615B0F0078239F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Reframe faster";
+			productName = Reframe;
+			productReference = E1FD66AF24615B0F0078239F /* Reframe faster.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +151,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E1FD668C24615A030078239F /* Reframe */,
+				E1FD668C24615A030078239F /* Reframe slower */,
+				E1FD66A324615B0F0078239F /* Reframe faster */,
 			);
 		};
 /* End PBXProject section */
@@ -124,9 +162,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1FD66BA2461621F0078239F /* reframe.o in Resources */,
 				E1FD669824615A040078239F /* Assets.xcassets in Resources */,
-				E1FD669624615A030078239F /* Document.xib in Resources */,
+				E1FD66B5246160E80078239F /* Document.xib in Resources */,
 				E1FD669B24615A040078239F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1FD66A824615B0F0078239F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1FD66BB2461653B0078239F /* reframe.o in Resources */,
+				E1FD66A924615B0F0078239F /* Assets.xcassets in Resources */,
+				E1FD66AA24615B0F0078239F /* Document.xib in Resources */,
+				E1FD66AB24615B0F0078239F /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +189,15 @@
 			files = (
 				E1FD669324615A030078239F /* Document.swift in Sources */,
 				E1FD669124615A030078239F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1FD66A424615B0F0078239F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1FD66A524615B0F0078239F /* Document.swift in Sources */,
+				E1FD66A624615B0F0078239F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +372,42 @@
 			};
 			name = Release;
 		};
+		E1FD66AD24615B0F0078239F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Reframe/Reframe.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Reframe slower copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PPCQUA.Reframe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E1FD66AE24615B0F0078239F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Reframe/Reframe.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Reframe slower copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PPCQUA.Reframe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -325,11 +420,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E1FD66A024615A040078239F /* Build configuration list for PBXNativeTarget "Reframe" */ = {
+		E1FD66A024615A040078239F /* Build configuration list for PBXNativeTarget "Reframe slower" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E1FD66A124615A040078239F /* Debug */,
 				E1FD66A224615A040078239F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1FD66AC24615B0F0078239F /* Build configuration list for PBXNativeTarget "Reframe faster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1FD66AD24615B0F0078239F /* Debug */,
+				E1FD66AE24615B0F0078239F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
